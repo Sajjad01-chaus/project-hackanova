@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techno Buddy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="boxicons-2.0.9/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <title>Real-Time Graph with Plotly.js</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="home">
+
+    <div class="scroll-up-btn">
+        <i class="bx bx-up-arrow-alt bx-sm"></i>
+    </div>
+    <div class="showcase">
+        <!-- navbar top section -->
+
+        <div class="navbar-top">
+            <ul class="left">
+                <li><a href="#">Mumbai</a></li>
+                <li><a href="#"><i class="bx bxs-time bx-xs"></i> Mon - sat: 8:00 - 10:00</a></li>
+                <li><a href="#"><i class="bx bxs-map bx-xs"></i> Thakur College of Thakur Engineering & Technology.</a></li>
+                <li><a href="#"><i class="bx bxs-phone bx-xs"></i> +022 67308106 </a></li>
+            </ul>
+            <ul class="right">
+                <li><a href="#"><i class="bx bxl-twitter bx-xs"></i></a></li>
+                <li><a href="#"><i class="bx bxl-pinterest-alt bx-xs"></i></a></li>
+                <li><a href="#"><i class="bx bxl-facebook bx-xs"></i></a></li>
+                <li><a href="#"><i class="bx bxl-instagram-alt bx-xs"></i></a></li>
+            </ul>
+        </div>
+
+
+        <!-- navbar bottom section -->
+       <div class="navbar-bottom">
+            <img src="logo.png" alt="Logo" height="80px">
+            <a href="#home" class="brand-left">Techno Buddy</a>
+            <ul class="menu-right">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="C:\Users\Prince\Downloads\finance-app-master">Visualizations</a></li>
+                <li><a href="#Graph">Real-Time Graph</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#"><i class="bx bx-search bx-sm" id="search-btn"></i></a></li>
+            </ul>
+            <div class="search-form">
+                <input type="search" name="search-box" id="search-box" placeholder="search here...">
+                <label for="search-box" class="bx bx-search bx-sm"></label>
+            </div>
+       </div>
+       
+       <!-- Showcase content Section -->
+       <div class="showcase-content">
+           <h1>AI-Powered Budget Buddy:<br> Simplify Expense Tracking <span>& Spend Smarter.</span></h1>
+          
+           <!-- <p>Your financial sidekick: track expenses effortlessly,<br> spend wiser with AI magic!</p> -->
+           <!-- <a href="#" class="btn btn-left">EXPLORE MORE</a>
+           <a href="#" class="btn btn-right">GET IN TOUCH</a> -->
+       </div>
+    </div>
+
+    <!-- Services / Goal Section  -->
+
+    <section id="services" class="bg-light py-3">
+        <div class="wrapper">
+            <div class="items">
+                <div class="item">
+                    <i class="bx bxs-badge-dollar bx-lg"></i>
+                    <h3>AI-Powered Tracking</h3>
+                    <p>Effortlessly track expenses with AI efficiency.</p>
+                </div>
+                <div class="item">
+                    <i class="bx bxs-building-house bx-lg"></i>
+                    <h3>Streamlined Budgeting</h3>
+                    <p>Effortlessly generate financial reports with AI.</p>
+                </div>
+                <div class="item">
+                    <i class="bx bxs-credit-card-front bx-lg"></i>
+                    <h3>Smart Spending</h3>
+                    <p>Receive AI-based spending suggestions.</p>
+                </div>
+                <div class="item">
+                    <i class="bx bxs-plane-alt bx-lg"></i>
+                    <h3>Instant Expense Insights</h3>
+                    <p>AI-driven insights empower smarter decisions</p>
+                </div>
+            </div>
+            <div id="goal" class="goal">
+                <div class="goal-img">
+                    <img src="1.jpg">
+                </div>
+                <div class="goal-text">
+                    <a href="#">Our Priorities</a>
+                    <h2>Let's <br> Get You Started !</h2>
+                    <div class="contents">
+                        <div class="content p-4">
+                            <i class="bx bx-check bx-sm"></i>
+                        </div>
+                        <div class="content p-4">
+                            <h3>Tracking your expenses</h3>
+                            <p>Track expenses effortlessly, <br>Stay financially informed seamlessly.</p>
+                        </div>
+                    </div>
+                    <div class="contents">
+                        <div class="content p-4">
+                            <i class="bx bx-check bx-sm"></i>
+                        </div>
+                        <div class="content p-4">
+                            <h3>Start a gold SIP</h3>
+                            <p>Invest in gold SIPs for stability and growth. <br>Secure your future with smart, gold-backed investments.</p>
+                        </div>
+                    </div>
+                    <div class="contents">
+                        <div class="content p-4">
+                            <i class="bx bx-check bx-sm"></i>
+                        </div>
+                        <div class="content p-4">
+                            <h3>Mutual Funds !</h3>
+                            <p>Mutual funds: Diversify, invest, grow. <br>Secure your future with mutual funds.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <h2 href="#Graph" class="text-center graph-heading">Real-Time <span class="text-secondary">Graph</span> </h2>
+    <div id="graph"></div>
+       <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+       <script src="script.js"></script>
+    
+       <iframe height="430" width="350" src="https://bot.dialogflow.com/0bb8668a-ed56-4c04-aaf0-96b39c2190e7"></iframe>
+
+
+
+    <section id="blog" class="blog py-3">
+        <div class="wrapper">
+            <div class="header">
+                <span></span>
+                <h4>Quick Access</h4>
+            </div>
+            <div class="blog-info">
+                <h2>Start Simplifying <span class="text-secondary">your finances today!</span></h2>
+                <a href="#">view all</a>
+            </div>
+            <div class="blog-card">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="2.jpg">
+                    </div>
+                    <div class="card-body">
+                        <span class="tag tag-yellow">Input Expenses</span>
+                        <h4>Easily input expenses with our intuitive interface.<br> Streamline your financial tracking for better control and insight.</h4>
+                        <div class="footer">
+                            <small>February 17,2024.</small>
+                            <a href="#"><i class="bx bx-right-arrow-alt bx-sm"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <img src="3.jpg">
+                    </div>
+                    <div class="card-body">
+                        <span class="tag tag-purple">AI investing</span>
+                        <h4>Experience the future of investing with AI-driven strategies.<br>Let cutting-edge technology maximize your returns and minimize risks.</h4>
+                        <div class="footer">
+                            <small>February 17,2024.</small>
+                            <a href="#"><i class="bx bx-right-arrow-alt bx-sm"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <img src="4.jpg">
+                    </div>
+                    <div class="card-body">
+                        <span class="tag tag-pink">Buy Gold</span>
+                        <h4>Invest in your future with gold.<br> Secure your wealth and hedge against market volatility by buying gold today.</h4>
+                        <div class="footer">
+                            <small>February 17,2024.</small>
+                            <a href="#"><i class="bx bx-right-arrow-alt bx-sm"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="contact" class="contact bg-secondary py-3">
+        <h2 class="text-center">Subscribe To Our Newsletter</h2>
+        <p class="text-center">Join our newsletter for the latest updates, exclusive content, and special offers tailored to your financial journey.<br> Stay informed and empowered as we deliver expert insights and tips directly to your inbox. Subscribe now to take the next step towards mastering your finances!</p>
+        <div class="wrapper">
+            <form class="text-center">
+                <input type="email" name="email" id="email" placeholder="Enter Email Address">
+                <button class="button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-bottom py-3 text-center">
+        <p>Copyright &copy; 2024 by Team Techno. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
